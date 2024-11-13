@@ -29,9 +29,11 @@ export default function UpcomingFairs() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className='text-4xl font-regular text-black dark:text-white'>
+            <h1 className='text-6xl  font-bold bg-gradient-to-r from-pastelPink via-pastelBlue to-pastelBeige text-transparent bg-clip-text animate-gradient-flow'>
               Where You Can <br />
-              <span className='text-4xl md:text-5xl font-regular mt-1 leading-none'>Find Us</span>
+              <span className='text-6xl  md:text-8xl font-bold mt-1 leading-none bg-gradient-to-r from-pastelPink via-pastelBlue to-pastelBeige text-transparent bg-clip-text animate-gradient-flow'>
+                Find Us
+              </span>
             </h1>
           </>
         }
