@@ -29,7 +29,7 @@ export default function LiquidOpal() {
         font='fonts/BebasNeue-Regular.ttf'
         position={[0, 2.5, -2]}
       >
-        OPAL'S JEWELS & GEMS
+        OPAL&apos;S JEWELS & GEMS
       </Text>
       <Float>
         <mesh geometry={nodes.petals.geometry} ref={mesh} position={[0, 0.5, 0]}>
@@ -49,13 +49,14 @@ export default function LiquidOpal() {
           />
         </mesh>
         <mesh geometry={nodes.Sphere001.geometry} position={[0, 0.5, 0]}>
-          <MeshTransmissionMaterial
-            thickness={3}
-            roughness={1}
-            transmission={1}
-            ior={0}
-            chromaticAberration={1}
-            backside
+          <meshPhongMaterial
+            attach='material'
+            color='white'
+            specular='white'
+            shininess={100}
+            reflectivity={1}
+            emissive={'white'}
+            emissiveIntensity={1}
           />
         </mesh>
       </Float>

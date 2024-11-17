@@ -2,11 +2,11 @@
 
 import { addEffect } from '@react-three/fiber'
 import { BackgroundBeams } from './components/ui/background-beams'
-import ImageGallery from '@/components/ImageGallery'
 import UpcomingFairs from '@/components/UpcomingFairs'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import dynamic from 'next/dynamic'
+import ImageGallery from '@/components/ImageGallery'
 
 // Dynamic Import for scene components
 const Scene = dynamic(() => import('@/components/scene'), {
@@ -20,10 +20,12 @@ const AboutUsScene = dynamic(() => import('@/components/AboutUsScene'), {
   ssr: false,
 })
 
-// Use lenis smooth scroll
-const lenis = new Lenis({ syncTouch: true })
-// Integrate into fibers own raf loop instead of opening another
-addEffect((t) => lenis.raf(t))
+let lenis: Lenis | null = null
+
+if (typeof window !== 'undefined') {
+  lenis = new Lenis({ syncTouch: true })
+  addEffect((t) => lenis?.raf(t))
+}
 
 // Component to load external script
 function ScriptLoader({ src }: { src: string }) {
@@ -82,7 +84,7 @@ export default function Page() {
       <section className='p-14'>
         <div className='flex flex-row justify-between items-center mb-2'>
           <p className=' font-mono text-sm font-bold'>All Rights Reserved</p>
-          <p className=' font-mono text-sm font-bold'>Opal's Jewels and Gems 2024</p>
+          <p className=' font-mono text-sm font-bold'>Opal&apos;s Jewels and Gems 2024</p>
         </div>
       </section>
       <BackgroundBeams className='z-[-2]' />
