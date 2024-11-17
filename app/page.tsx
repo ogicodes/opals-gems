@@ -82,7 +82,7 @@ export default function Page() {
       <section className='p-14'>
         <div className='flex flex-row justify-between items-center mb-2'>
           <p className=' font-mono text-sm font-bold'>All Rights Reserved</p>
-          <p className=' font-mono text-sm font-bold'>Opal's Jewels and Gems 2024</p>
+          <p className=' font-mono text-sm font-bold'>Opal&apos;s Jewels and Gems 2024</p>
         </div>
       </section>
       <BackgroundBeams className='z-[-2]' />
