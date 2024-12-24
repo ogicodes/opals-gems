@@ -33,13 +33,13 @@ const Scene = () => {
           onIncline={() => setDpr(2)}
           onDecline={() => setDpr(1)}
         />
-        <Environment preset="studio" />
+        <Environment preset="studio" environmentIntensity={0.1} />
         <EffectComposer multisampling={4}>
           <DepthOfField
-            focusDistance={0}
-            focalLength={0.2}
-            bokehScale={4}
-            height={480}
+        focusDistance={0}
+        focalLength={0.2}
+        bokehScale={4}
+        height={480}
           />
           <Vignette eskil={false} offset={0.1} darkness={1.1} />
         </EffectComposer>
