@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 
 const AboutUsModels = dynamic(
   () => import("@/components/about-us").then((mod) => mod.Models),
-  { ssr: false },
+  { ssr: false }
 );
 
 // Custom ShaderMaterial for a horizontal three-color gradient
@@ -80,21 +80,14 @@ const Scene = () => {
             textAlign="justify"
             material={materialRef.current}
           >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam explicabo. dolores amet,
-            dicta sunt ullamq consequuntur magni sequi aliquam laboriosam, esse
-            voluptatem. beatae vitae dicta beatae vitae dicta rem volute
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-            architecto beatae vitae Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit a eos qui incidt
-            consectetur, adipisci velit, sed quia non numquam eius modi tempora
-            incidunt ut labore et dolore magnam ratione corporis suscipit velit
-            in ea voluptate as paraiatur? quaerat voluptatem. Ut enim ad minima
-            veniam, quis nostrum exercitationem ullam aycfe nisi ut aliquid ex
-            ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
-            quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
-            quo voluptas nulla
+            Hailing from Toronto, Ontario, Opal grew up immersed in a vibrant
+            arts culture, where weekends were often spent wandering vendor
+            markets and hunting for hidden treasures in local thrift stores.
+            With parents who specialize in carpentry and leatherworking, Opal
+            was naturally drawn to craftsmanship from an early age. The art of
+            transforming raw materials into something beautiful, observed in
+            their parents’ work, sparked a passion for creating jewelry that
+            blends creativity, skill, and personal expression.
           </Text>
           <Text
             color="white"
@@ -105,21 +98,13 @@ const Scene = () => {
             lineHeight={1.6} // Space between lines
             textAlign="justify"
           >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam explicabo. dolores amet,
-            dicta sunt ullamq consequuntur magni sequi aliquam laboriosam, esse
-            voluptatem. beatae vitae dicta beatae vitae dicta rem volute
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-            architecto beatae vitae Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit a eos qui incidt
-            consectetur, adipisci velit, sed quia non numquam eius modi tempora
-            incidunt ut labore et dolore magnam ratione corporis suscipit velit
-            in ea voluptate as paraiatur? quaerat voluptatem. Ut enim ad minima
-            veniam, quis nostrum exercitationem ullam aycfe nisi ut aliquid ex
-            ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
-            quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
-            quo voluptas nulla
+            Despite their big-city upbringing, Opal has always felt most at home
+            in nature. Now residing in the Muskoka Region of Ontario, they have
+            fully embraced a small-town, outdoor-focused lifestyle. Opal’s
+            jewelry is a fusion of these two worlds colliding: sleek lines and
+            delicate details merge seamlessly with organic forms, each piece
+            reflecting Opal’s evolving perspective—ever-changing, yet
+            steadfastly true to their core as an artist.
           </Text>
         </group>
         <Environment preset="dawn" />
