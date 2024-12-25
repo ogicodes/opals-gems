@@ -8,6 +8,8 @@ import opalsGems2 from "../../public/images/opalsgems2.jpeg";
 import opalsGems3 from "../../public/images/opalsgems3.jpeg";
 import opalsGems4 from "../../public/images/opalsgems4.jpeg";
 import opalsGems5 from "../../public/images/opalsgems5.jpeg";
+import opalsGems6 from "../../public/images/opalsgems6.jpeg";
+import opalsGems7 from "../../public/images/opalsgems7.jpeg";
 
 // Define the structure of our image objects
 import { StaticImageData } from "next/image";
@@ -24,6 +26,8 @@ const images: ImageItem[] = [
   { src: opalsGems3, alt: "Sample image 3" },
   { src: opalsGems4, alt: "Sample image 4" },
   { src: opalsGems5, alt: "Sample image 5" },
+  { src: opalsGems6, alt: "Sample image 6" },
+  { src: opalsGems7, alt: "Sample image 7" },
 ];
 
 export default function ImageGallery() {
