@@ -17,7 +17,7 @@ const Page = () => {
 
       <section className="container mx-auto p-8">
         <div className="flex flex-col items-end mb-8">
-          <h2 className="text-6xl font-bold bg-gradient-to-r from-pastelPink via-pastelBlue to-pastelBeige text-transparent bg-clip-text animate-gradient-flow">
+          <h2 className="text-6xl font-extrabold bg-gradient-to-r from-pastelPink via-pastelBlue to-pastelBeige text-transparent bg-clip-text animate-gradient-flow">
             Gallery
           </h2>
           <ImageGallery />
