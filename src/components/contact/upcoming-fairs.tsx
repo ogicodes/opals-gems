@@ -23,16 +23,6 @@ const fairsList = [
     location: "",
     url: "",
   },
-  {
-    date: "Upcoming",
-    location: "",
-    url: "",
-  },
-  {
-    date: "Fairs",
-    location: "",
-    url: "",
-  },
 ];
 
 const UpcomingFairs = () => {
@@ -41,7 +31,7 @@ const UpcomingFairs = () => {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-6xl  font-bold bg-gradient-to-r from-pastelPink via-pastelBlue to-pastelBeige text-transparent bg-clip-text animate-gradient-flow">
+            <h1 className="text-6xl md:text-9xl  font-extrabold bg-gradient-to-r from-pastelPink via-pastelBlue to-pastelBeige text-transparent bg-clip-text animate-gradient-flow">
               Where You Can <br />
               <span className="text-6xl  md:text-8xl font-bold mt-1 leading-none bg-gradient-to-r from-pastelPink via-pastelBlue to-pastelBeige text-transparent bg-clip-text animate-gradient-flow">
                 Find Us
