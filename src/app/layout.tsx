@@ -1,7 +1,7 @@
 import "./global.css";
 
 import { ThemeProvider } from "@/app/providers/Providers";
-import { bebasNeue, diplomata } from "@/utils/fonts";
+import { bebasNeue } from "@/utils/fonts";
 
 export const metadata = {
   title: `Opal's Jewels and Gems`,
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="antialiased" suppressHydrationWarning>
-      <body className={`${bebasNeue.className} ${diplomata.className}`}>
+      <body className={`${bebasNeue.className}`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
