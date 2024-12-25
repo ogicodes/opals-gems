@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
-import placeholder from "../../public/images/placeholder.png";
 import opalsGems1 from "../../public/images/opalsgems1.jpeg";
 import opalsGems2 from "../../public/images/opalsgems2.jpeg";
 import opalsGems3 from "../../public/images/opalsgems3.jpeg";
@@ -25,21 +24,6 @@ const images: ImageItem[] = [
   { src: opalsGems3, alt: "Sample image 3" },
   { src: opalsGems4, alt: "Sample image 4" },
   { src: opalsGems5, alt: "Sample image 5" },
-  { src: placeholder, alt: "Sample image 6" },
-  { src: placeholder, alt: "Sample image 7" },
-  { src: placeholder, alt: "Sample image 8" },
-  { src: placeholder, alt: "Sample image 9" },
-  { src: placeholder, alt: "Sample image 10" },
-  { src: placeholder, alt: "Sample image 11" },
-  { src: placeholder, alt: "Sample image 12" },
-  { src: placeholder, alt: "Sample image 13" },
-  { src: placeholder, alt: "Sample image 14" },
-  { src: placeholder, alt: "Sample image 15" },
-  { src: placeholder, alt: "Sample image 16" },
-  { src: placeholder, alt: "Sample image 17" },
-  { src: placeholder, alt: "Sample image 18" },
-  { src: placeholder, alt: "Sample image 19" },
-  { src: placeholder, alt: "Sample image 20" },
 ];
 
 export default function ImageGallery() {

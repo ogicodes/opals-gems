@@ -23,16 +23,6 @@ const fairsList = [
     location: "",
     url: "",
   },
-  {
-    date: "Upcoming",
-    location: "",
-    url: "",
-  },
-  {
-    date: "Fairs",
-    location: "",
-    url: "",
-  },
 ];
 
 const UpcomingFairs = () => {

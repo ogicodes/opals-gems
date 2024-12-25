@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { Float } from "@react-three/drei";
 
@@ -24,6 +24,9 @@ const Models = () => {
     []
   );
   const A = 5;
+
+  const { viewport } = useThree();
+  const isMobile = viewport.width < 4;
 
   const startPositions = useRef(
     Array.from(
@@ -54,54 +57,70 @@ const Models = () => {
         <AbstractOpal
           scale={0.001}
           rotation={[0, 0, 0]}
-          position={[-2, -1, 0]}
+          position={isMobile ? [0, -1, -2] : [-2, -1, 0]}
         />
       </Float>
       <Float>
-        <AquaCrystal scale={5} rotation={[0, 0, 0]} position={[-2, 2, 0]} />
+        <AquaCrystal
+          scale={5}
+          rotation={[0, 0, 0]}
+          position={isMobile ? [-1.5, 2, -2] : [-2, 2, -2]}
+        />
       </Float>
       <Float>
-        <Crystal scale={0.1} rotation={[0, 3, 0]} position={[1, 3, -2]} />
+        <Crystal
+          scale={0.1}
+          rotation={[0, 3, 0]}
+          position={isMobile ? [0, -2, 0] : [1, 3, -2]}
+        />
       </Float>
       <Float>
-        <CrystalHeart scale={1} rotation={[0, 0, 0]} position={[1.5, 0, 0]} />
+        <CrystalHeart
+          scale={1}
+          rotation={[0, 0, 0]}
+          position={isMobile ? [2, -2, 0] : [1.5, 0, 0]}
+        />
       </Float>
       <Float>
         <IcyBlueCrystal
           scale={0.2}
           rotation={[0, 0, 0]}
-          position={[-3, 0, 0]}
+          position={isMobile ? [2, -4, 0] : [-3, 0, 0]}
         />
       </Float>
       <Float>
-        <PinkCrystal scale={0.2} rotation={[0, 0, 0]} position={[-6, 0, 0]} />
+        <PinkCrystal
+          scale={0.2}
+          rotation={[0, 0, 0]}
+          position={isMobile ? [1, -3.5, 0] : [-6, 0, 0]}
+        />
       </Float>
       <Float>
         <RedPurpleCrystal
           scale={0.02}
           rotation={[0, 0, 0]}
-          position={[8, 0, 0]}
+          position={isMobile ? [3, -3.5, 0] : [8, 0, 0]}
         />
       </Float>
       <Float>
         <RedPurpleCrystalCluster
-          scale={0.02}
-          rotation={[0, 0, 0]}
-          position={[7, 6, -4]}
+          scale={isMobile ? 0.01 : 0.02}
+          rotation={[0, 1, 0]}
+          position={isMobile ? [0, -5.5, 0] : [7, 6, -4]}
         />
       </Float>
       <Float>
         <VioletCrystal
           scale={0.002}
           rotation={[0, 0, 0]}
-          position={[5, 2, 0]}
+          position={isMobile ? [0, 3, -2] : [5, 2, 0]}
         />
       </Float>
       <Float>
         <RedGreenCrystal
-          scale={0.8}
+          scale={isMobile ? 0.6 : 0.8}
           rotation={[0, 0, 0]}
-          position={[-6, -3, 0]}
+          position={isMobile ? [1, 1, -2] : [-6, -3, 0]}
         />
       </Float>
     </>

@@ -129,7 +129,6 @@ const Scene = () => {
         </group>
         <ViewportAwareText />
         <Environment preset="dawn" />
-        <OrbitControls enableZoom={false} />
       </Canvas>
     </Suspense>
   );

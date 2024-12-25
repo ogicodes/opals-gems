@@ -34,7 +34,6 @@ const LiquidOpal = () => {
         position={[-1.8, -1.8, 0]}
         rotation={[-0.1, -0.2, -1.6]}
       />
-      <OrbitControls enableZoom={false} />
     </group>
   );
 };
